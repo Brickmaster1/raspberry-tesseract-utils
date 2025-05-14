@@ -36,7 +36,7 @@ cp -rT "$OV_BOOT" "$BOOT_MNT"
 cp -rT "$OV_ROOT" "$ROOT_MNT"
 
 # 4) Patches (unified diffs) alongside overlays
-echo "[make_image] Applying overlay‐directory patches…"
+echo "[make_image] Applying overlay-directory patches…"
 # Boot
 find "$OV_BOOT" -name '*.patch' | while read -r patch; do
   rel="${patch#$OV_BOOT/}"
